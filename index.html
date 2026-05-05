@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megan Wala | Art, Admin & Consulting</title>
+    <!-- Using Google Fonts for an editorial feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --accent: #6b705c; /* Muted sage for a designer vibe */
+        }
 
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Editorial Header */
+        header {
+            padding: 4rem 10%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            margin-right: 2rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 400;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 10%;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+        }
+
+        /* Portfolio Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 10% 8rem 10%;
+        }
+
+        .project-card {
+            aspect-ratio: 4/5;
+            background: #eee;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-info {
+            padding: 1rem 0;
+        }
+
+        /* Blog/Consulting Section */
+        .content-section {
+            padding: 6rem 10%;
+            background: #fff;
+        }
+
+        .footer {
+            padding: 4rem 10%;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">WALA.</div>
+        <nav>
+            <a href="#work">Portfolio</a>
+            <a href="#consulting">Consulting</a>
+            <a href="#blog">Writing</a>
+            <a href="mailto:hello@meganwala.com">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Megan Landon: Articulating the space between art and admin.</h1>
+            <p>I help artists and galleries organize their creative chaos into professional systems through design, coordination, and consulting.</p>
+        </section>
+
+        <section id="work" class="grid">
+            <!-- Project 1 -->
+            <div>
+                <div class="project-card">
+                    <!-- Replace with your image link later -->
+                </div>
+                <div class="project-info">
+                    <strong>Gallery Coordination</strong><br>
+                    <span>Overture Center for the Arts</span>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div>
+                <div class="project-card"></div>
+                <div class="project-info">
+                    <strong>Creative Portfolio</strong><br>
+                    <span>Digital Design & Still Life</span>
+                </div>
+            </div>
+             <!-- Project 3 -->
+             <div>
+                <div class="project-card"></div>
+                <div class="project-info">
+                    <strong>Artist Consulting</strong><br>
+                    <span>System Optimization</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="consulting" class="content-section">
+            <h2>Artist Consulting</h2>
+            <p>Providing the structural backbone for your creative practice. Services include digital organization, portfolio building, and workflow design.</p>
+            <a href="mailto:hello@meganwala.com" style="color: var(--accent); font-weight: bold;">Inquire for 2026 availability &rarr;</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 Megan Wadsworth Landon. Built with code & intention.
+    </footer>
+
+</body>
+</html>
